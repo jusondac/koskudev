@@ -73,3 +73,7 @@ group :test do
   gem "selenium-webdriver"
 
 end
+
+gem "foreman", "~> 0.87.2"
+gem "devise", "~> 4.9"
+gem "awesome_print", "~> 1.9"
