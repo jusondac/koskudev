@@ -44,6 +44,8 @@ gem "tzinfo-data", platforms: %i[ mingw mswin x64_mingw jruby ]
 
 # Reduces boot times through caching; required in config/boot.rb
 gem "bootsnap", require: false
+gem "foreman", "~> 0.87.2"
+gem "awesome_print", "~> 1.9"
 
 # Use Sass to process CSS
 # gem "sassc-rails"
@@ -74,6 +76,4 @@ group :test do
 
 end
 
-gem "foreman", "~> 0.87.2"
 gem "devise", "~> 4.9"
-gem "awesome_print", "~> 1.9"
