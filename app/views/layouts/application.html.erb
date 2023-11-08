@@ -10,9 +10,10 @@
     <%= javascript_importmap_tags %>
   </head>
 
-  <body>
+  <body class="bg-gray-900 text-white">
     <% if current_user %>
-      <%= render 'layouts/components/navbar_admins'  %>
+      <%= render 'layouts/components/admins/navbar'  %>
+      <%= render 'layouts/components/admins/sidebar' %>
     <% else %>
       <%= render 'layouts/components/navbar' %>
     <% end %>
