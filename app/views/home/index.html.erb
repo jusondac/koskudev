@@ -1,6 +1,12 @@
-<%= render 'layouts/components/hero' %>
-<%= render 'layouts/components/about' %>
-<%= render 'layouts/components/place' %>
-<%= render 'layouts/components/testimonial' %>
-<%= render 'layouts/components/pricing' %>
-<%= render 'layouts/components/contact' %>
+<% unless current_user %>
+  <%= render 'layouts/components/hero' %>
+  <%= render 'layouts/components/about' %>
+  <%= render 'layouts/components/place' %>
+  <%= render 'layouts/components/testimonial' %>
+  <%= render 'layouts/components/pricing' %>
+  <%= render 'layouts/components/contact' %>
+<% else %>
+  <div class="bg-gray-900 h-full text-white">
+    Master ges
+  </div>
+<% end %>
